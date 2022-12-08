@@ -1,0 +1,39 @@
+/** @mainpage Calculs des moyennes
+ * @section Introduction Introduction
+ *
+ * Le but de ce test est de calculer les moyennes des indicateurs sur certaines durées
+ * (1 jour, 1 semaine, 1 mois, 1 ans) afin de stocker les données sur le long terme.
+ *
+ * @section Utilisation Utilisation
+ * @subsection Librairie Récupérer les binaires
+ * Bibliothèques de Qt + driver mySQL :
+ *
+ *     $ sudo apt-get install qtbase5-dev-tools qtbase5-dev
+ *     $ sudo apt-get install libqt5sql5-mysql
+ *
+ * @subsection Sources Récupérer les codes sources
+ *
+ *     $ git clone https://gitlab.com/p2022_FI/4-Sunshare.git
+ *
+ * @subsection Compilation Compilation des sources
+ * Dans le dossier du projet :
+ *
+ * 	$ qmake ./TestMoyBdD.pro
+ * 	$ make
+ *
+ * @subsection Exécution Exécution
+ *
+ * 	$ ./TestMoyBdD
+ *
+ * @section Exigences Exigences
+ * Le programme ne doit pas afficher d'erreur lors de l'envoi des requêtes SQL.
+ * Les données envoyées sont visibles sur phpMyAdmin.
+ * @section Liens Liens
+ *     -# [Documentation de dOxygen](http://www.stack.nl/~dimitri/doxygen/manual)
+ *     -# [QtCreator](https://www.qt.io/download/)
+ *     -# [Bibliothèque QSerialPort](https://doc.qt.io/qt-5/qserialport.html)
+ *     -# [Bibliothèque pigpio](https://abyz.me.uk/rpi/pigpio/)
+ *
+ * @section Auteur Auteurs
+ * Me. COURJAUD, STS SN-IR, 2022-04-07.
+ */

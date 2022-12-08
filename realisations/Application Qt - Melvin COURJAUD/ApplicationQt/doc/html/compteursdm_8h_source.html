@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sunshare:  Fichier source de /local/4-Sunshare/realisations/Application Qt - Melvin COURJAUD/ApplicationQt/include/compteursdm.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Sunshare
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">compteursdm.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="compteursdm_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef COMPTEURSDM_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define COMPTEURSDM_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;pigpio.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_compteur_s_d_m.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_compteur_s_d_m.html">CompteurSDM</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_compteur_s_d_m.html#a411d5c9539afce69e78d5969519b8309">CompteurSDM</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_compteur_s_d_m.html#a8842188409fb1381ad05383af01227bf">~CompteurSDM</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_compteur_s_d_m.html#ab5ffdb1420755a4d52bd4c91685c3f23">Lire</a>(<span class="keywordtype">int</span> gpio, <span class="keywordtype">int</span> niveau, uint32_t tick);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_compteur_s_d_m.html#a4f976f9c2a3ce975110cc05300f26e01">Get_nProduction</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_compteur_s_d_m.html#ae63f6e3c528c094d8c8fc7cb71257b16">   39</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_compteur_s_d_m.html#ae63f6e3c528c094d8c8fc7cb71257b16">nProduction</a>;<span class="comment">// static : partagé entre tous les objets de la classe</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif // COMPTEURSDM_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_compteur_s_d_m_html_a8842188409fb1381ad05383af01227bf"><div class="ttname"><a href="class_compteur_s_d_m.html#a8842188409fb1381ad05383af01227bf">CompteurSDM::~CompteurSDM</a></div><div class="ttdeci">~CompteurSDM()</div><div class="ttdoc">Destructeur de la classe CompteurSDM.</div><div class="ttdef"><b>Definition:</b> compteursdm.cpp:51</div></div>
+<div class="ttc" id="aclass_compteur_s_d_m_html_a4f976f9c2a3ce975110cc05300f26e01"><div class="ttname"><a href="class_compteur_s_d_m.html#a4f976f9c2a3ce975110cc05300f26e01">CompteurSDM::Get_nProduction</a></div><div class="ttdeci">static int Get_nProduction()</div><div class="ttdoc">Accesseur de l'attribut nProduction.</div><div class="ttdef"><b>Definition:</b> compteursdm.cpp:70</div></div>
+<div class="ttc" id="aclass_compteur_s_d_m_html_ab5ffdb1420755a4d52bd4c91685c3f23"><div class="ttname"><a href="class_compteur_s_d_m.html#ab5ffdb1420755a4d52bd4c91685c3f23">CompteurSDM::Lire</a></div><div class="ttdeci">static void Lire(int gpio, int niveau, uint32_t tick)</div><div class="ttdoc">Permet de détecter les impulsions.</div><div class="ttdef"><b>Definition:</b> compteursdm.cpp:59</div></div>
+<div class="ttc" id="aclass_compteur_s_d_m_html_ae63f6e3c528c094d8c8fc7cb71257b16"><div class="ttname"><a href="class_compteur_s_d_m.html#ae63f6e3c528c094d8c8fc7cb71257b16">CompteurSDM::nProduction</a></div><div class="ttdeci">static int nProduction</div><div class="ttdoc">nProduction contient l'index de production en Wh. Cet attribut est statique pour être utilisé utilisé...</div><div class="ttdef"><b>Definition:</b> compteursdm.h:39</div></div>
+<div class="ttc" id="aclass_compteur_s_d_m_html_a411d5c9539afce69e78d5969519b8309"><div class="ttname"><a href="class_compteur_s_d_m.html#a411d5c9539afce69e78d5969519b8309">CompteurSDM::CompteurSDM</a></div><div class="ttdeci">CompteurSDM()</div><div class="ttdoc">Constructeur de la classe CompteurSDM.</div><div class="ttdef"><b>Definition:</b> compteursdm.cpp:26</div></div>
+<div class="ttc" id="aclass_compteur_s_d_m_html"><div class="ttname"><a href="class_compteur_s_d_m.html">CompteurSDM</a></div><div class="ttdoc">La classe CompteurSDM permet de détecter les impulsions du compteur SDM120D et d'en déduire l'index d...</div><div class="ttdef"><b>Definition:</b> compteursdm.h:9</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

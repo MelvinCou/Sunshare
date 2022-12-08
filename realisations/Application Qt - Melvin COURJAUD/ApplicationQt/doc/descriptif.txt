@@ -1,0 +1,56 @@
+/** @mainpage Application finale
+ * @section Introduction Introduction
+ *
+ * Ce programme reprend toutes les fonctionnalités des autres tests :
+ * # Collecter les indicateurs et les envoyer dans la base de données
+ * # Calculer les moyennes
+ * # Supprimer les données trop anciennes
+ * # Lire le fichier de configuration
+ *
+ * @section Utilisation Utilisation
+ * @subsection Librairie Récupérer les binaires
+ * Bibliothèques de Qt + driver mySQL :
+ *
+ *     $ sudo apt-get install qtbase5-dev-tools qtbase5-dev
+ *     $ sudo apt-get install libqt5sql5-mysql
+ *
+ * Compiler les bibliothèques pigpio :
+ *
+ *     $ sudo apt install python-setuptools python3-setuptools
+ *     $ wget https://github.com/joan2937/pigpio/archive/master.zip
+ *     $ unzip master.zip
+ *     $ cd pigpio-master
+ *     $ make
+ *     $ sudo make install
+ *
+ * @subsection Sources Récupérer les codes sources
+ *
+ *     $ git clone https://gitlab.com/p2022_FI/4-Sunshare.git
+ *
+ * @subsection Compilation Compilation des sources
+ * Dans le dossier du projet :
+ *
+ * 	$ qmake ./ApplicationQt.pro
+ * 	$ make
+ *
+ * @subsection Exécution Exécution
+ *
+ * 	$ sudo ./ApplicationQt
+ *
+ * @section Exigences Exigences
+ * Le programme ne doit pas afficher d'erreur lors de l'envoi des requêtes SQL.
+ * Les données envoyées sont visibles sur phpMyAdmin.
+ * @section Remarques Remarques
+ * Les programmes **RecupererTIC** et **LectureCompteur** doivent être opérationnels.
+ * Le fichier **Sunshare.ini** dans lequel est stocké les paramètres de connection à 
+ * la base de données doit être placé dans le même répertoire que l'exécutable **TestBdD**.
+ * Le programme n'a pas de fin, pour le terminer, utiliser le raccourci clavier *ctrl+C*.
+ * @section Liens Liens
+ *     -# [Documentation de dOxygen](http://www.stack.nl/~dimitri/doxygen/manual)
+ *     -# [QtCreator](https://www.qt.io/download/)
+ *     -# [Bibliothèque QSerialPort](https://doc.qt.io/qt-5/qserialport.html)
+ *     -# [Bibliothèque pigpio](https://abyz.me.uk/rpi/pigpio/)
+ *
+ * @section Auteur Auteurs
+ * Me. COURJAUD, STS SN-IR, 2022-04-07.
+ */

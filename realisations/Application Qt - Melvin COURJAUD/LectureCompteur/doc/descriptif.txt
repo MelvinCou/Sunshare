@@ -1,0 +1,47 @@
+/** @mainpage Lecture des impulsions
+ * @section Introduction Introduction
+ *
+ * Le but de ce test est de vérifier si l'on peut lire les impulsions du compteur SDM120D.
+ *
+ * @section Utilisation Utilisation
+ * @subsection Librairie Récupérer les binaires
+ * Compiler les bibliothèques pigpio :
+ *
+ *     $ sudo apt install python-setuptools python3-setuptools
+ *     $ wget https://github.com/joan2937/pigpio/archive/master.zip
+ *     $ unzip master.zip
+ *     $ cd pigpio-master
+ *     $ make
+ *     $ sudo make install
+ *
+ * Bibliothèques de Qt :
+ *
+ *     $ sudo apt-get install qtbase5-dev-tools qtbase5-dev
+ *
+ * @subsection Sources Récupérer les codes sources
+ *
+ *     $ git clone https://gitlab.com/p2022_FI/4-Sunshare.git
+ *
+ * @subsection Compilation Compilation des sources
+ * Dans le dossier du projet :
+ *
+ * 	$ qmake ./LectureCompteur.pro
+ * 	$ make
+ *
+ * @subsection Exécution Exécution
+ *
+ * 	$ ./LectureCompteur
+ *
+ * @section Remarques Remarques
+ * Le programme n'a pas de fin, pour le terminer, utiliser le raccourci clavier *ctrl+C*.
+ * @subsection Matériels Matériels
+ * Le compteur SDM120D doit correctement être relié au Boxenergie.
+ * @section Liens Liens
+ *     -# [Documentation de dOxygen](http://www.stack.nl/~dimitri/doxygen/manual)
+ *     -# [QtCreator](https://www.qt.io/download/)
+ *     -# [Bibliothèque QSerialPort](https://doc.qt.io/qt-5/qserialport.html)
+ *     -# [Bibliothèque pigpio](https://abyz.me.uk/rpi/pigpio/)
+ *
+ * @section Auteur Auteurs
+ * Me. COURJAUD, STS SN-IR, 2022-04-07.
+ */

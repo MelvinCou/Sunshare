@@ -1,0 +1,27 @@
+Se renseigner sur solarwatt, photowatt, kdisolar
+	- fabricant
+	- installation chez des particuliers
+	- autoconsommation ou revente à Enedis
+
+production locale : 	solaire ou éolien
+consommation : 		éclairage, chauffage, appareils électroménagers...
+injection :		donner l'énergie en trop à Enedis
+=> expliquer comment gagner de l'argent avec l'injection : valoriser l'énergie envoyée à Enedis
+
+
+
+Melvin :
+	Qt : bibliothèque multiplateforme
+	=> trouver version de Qt RPi compatible Qserialport
+	se documenter sur D2L et son entreprise + comment récupérer indicateurs
+	comment récupérer une impulsion filaire ?
+	pitInfo : bornier = permet de bloquer le câble en le serrant  /!\ ne pas oublier de dénuder le câble !!!
+
+	1.pitInfo : consommation + injection
+	2.boxenergie : production
+
+
+
+Ayaad :
+	LAMP : linux
+	WAMP : windows

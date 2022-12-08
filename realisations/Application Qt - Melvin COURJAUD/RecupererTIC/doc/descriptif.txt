@@ -1,0 +1,39 @@
+/** @mainpage Récupérer la TIC
+ * @section Introduction Introduction
+ *
+ * Le but de ce test est de vérifier si la TIC du Linky est lisible et que son traitement est possible.
+ *
+ * @section Utilisation Utilisation
+ * @subsection Librairie Récupérer les binaires
+ * Bibliothèques de Qt :
+ *
+ *     $ sudo apt-get install qtbase5-dev-tools qtbase5-dev
+ *
+ * @subsection Sources Récupérer les codes sources
+ *
+ *     $ git clone https://gitlab.com/p2022_FI/4-Sunshare.git
+ *
+ * @subsection Compilation Compilation des sources
+ * Dans le dossier du projet :
+ *
+ * 	$ qmake ./RecupererTIC.pro
+ * 	$ make
+ *
+ * @subsection Exécution Exécution
+ *
+ * 	$ ./RecupererTIC
+ *
+ * @section Exigences Exigences
+ * Le programme ne doit pas afficher d'erreur.
+ * Le programme affiche les indicateurs de soutirage (SINSTS), d'injection (SINSTI) ainsi que la date.
+ * @subsection Matériels Matériels
+ * Le μTéléinfo doit être connecté à un port USB du raspberry Pi.
+ * @section Liens Liens
+ *     -# [Documentation de dOxygen](http://www.stack.nl/~dimitri/doxygen/manual)
+ *     -# [QtCreator](https://www.qt.io/download/)
+ *     -# [Bibliothèque QSerialPort](https://doc.qt.io/qt-5/qserialport.html)
+ *     -# [Bibliothèque pigpio](https://abyz.me.uk/rpi/pigpio/)
+ *
+ * @section Auteur Auteurs
+ * Me. COURJAUD, STS SN-IR, 2022-04-07.
+ */

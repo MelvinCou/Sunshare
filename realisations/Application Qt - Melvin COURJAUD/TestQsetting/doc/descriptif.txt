@@ -1,0 +1,41 @@
+/** @mainpage Lecture du fichier d'initialisation
+ * @section Introduction Introduction
+ *
+ * Le but de ce test est de vérifier s'il est possible de lire le contenu d'un fichier
+ * pour paramétrer la connexion à la base de données et ainsi d'éviter de devoir
+ * compiler les sources à chaque nouvelle configuration.
+ *
+ * @section Utilisation Utilisation
+ * @subsection Librairie Récupérer les binaires
+ * Bibliothèques de Qt :
+ *
+ *     $ sudo apt-get install qtbase5-dev-tools qtbase5-dev
+ *
+ * @subsection Sources Récupérer les codes sources
+ *
+ *     $ git clone https://gitlab.com/p2022_FI/4-Sunshare.git
+ *
+ * @subsection Compilation Compilation des sources
+ * Dans le dossier du projet :
+ *
+ * 	$ qmake ./TestQsetting.pro
+ * 	$ make
+ *
+ * @subsection Exécution Exécution
+ *
+ * 	$ ./TestQsetting
+ *
+ * @section Exigences Exigences
+ * Le programme le contenu du fichier **Sunshare.ini**.
+ * @section Remarques Remarques
+ * Le fichier **Sunshare.ini** dans lequel est stocké les paramètres de connection à 
+ * la base de données doit être placé dans le même répertoire que l'exécutable **TestBdD**.
+ * @section Liens Liens
+ *     -# [Documentation de dOxygen](http://www.stack.nl/~dimitri/doxygen/manual)
+ *     -# [QtCreator](https://www.qt.io/download/)
+ *     -# [Bibliothèque QSerialPort](https://doc.qt.io/qt-5/qserialport.html)
+ *     -# [Bibliothèque pigpio](https://abyz.me.uk/rpi/pigpio/)
+ *
+ * @section Auteur Auteurs
+ * Me. COURJAUD, STS SN-IR, 2022-04-07.
+ */

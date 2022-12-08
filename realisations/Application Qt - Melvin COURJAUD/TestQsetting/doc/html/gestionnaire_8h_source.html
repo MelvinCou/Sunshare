@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sunshare:  Fichier source de /local/4-Sunshare/realisations/Application Qt - Melvin COURJAUD/TestQsetting/include/gestionnaire.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Sunshare
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">gestionnaire.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="gestionnaire_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GESTIONNAIRE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GESTIONNAIRE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QSettings&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_gestionnaire.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gestionnaire.html">Gestionnaire</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_gestionnaire.html#a1c8e4ce6ef439faab8c9db3f92df6bc8">Gestionnaire</a>();</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_gestionnaire.html#a39a3280ade948b6a1c08d113dcc7f375">~Gestionnaire</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_gestionnaire.html#a1906f07c50120cedf65a1b7b0c7aca3a">   14</a></span>&#160;    QSettings <a class="code" href="class_gestionnaire.html#a1906f07c50120cedf65a1b7b0c7aca3a">oParametres</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    QTimer oTimerAcquisition;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">    QTimer oTimerRetention;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_gestionnaire.html#a59a3e5b6ff78cc5a48a1e5ce716fe371">   19</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_gestionnaire.html#a59a3e5b6ff78cc5a48a1e5ce716fe371">nDelaiAcquisition</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_gestionnaire.html#a3650f859a5620bcb8e6d97a77c865a22">   20</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_gestionnaire.html#a3650f859a5620bcb8e6d97a77c865a22">nDelaiRetention</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif // GESTIONNAIRE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_gestionnaire_html_a1906f07c50120cedf65a1b7b0c7aca3a"><div class="ttname"><a href="class_gestionnaire.html#a1906f07c50120cedf65a1b7b0c7aca3a">Gestionnaire::oParametres</a></div><div class="ttdeci">QSettings oParametres</div><div class="ttdef"><b>Definition:</b> gestionnaire.h:14</div></div>
+<div class="ttc" id="aclass_gestionnaire_html"><div class="ttname"><a href="class_gestionnaire.html">Gestionnaire</a></div><div class="ttdef"><b>Definition:</b> gestionnaire.h:6</div></div>
+<div class="ttc" id="aclass_gestionnaire_html_a3650f859a5620bcb8e6d97a77c865a22"><div class="ttname"><a href="class_gestionnaire.html#a3650f859a5620bcb8e6d97a77c865a22">Gestionnaire::nDelaiRetention</a></div><div class="ttdeci">int nDelaiRetention</div><div class="ttdef"><b>Definition:</b> gestionnaire.h:20</div></div>
+<div class="ttc" id="aclass_gestionnaire_html_a1c8e4ce6ef439faab8c9db3f92df6bc8"><div class="ttname"><a href="class_gestionnaire.html#a1c8e4ce6ef439faab8c9db3f92df6bc8">Gestionnaire::Gestionnaire</a></div><div class="ttdeci">Gestionnaire()</div><div class="ttdef"><b>Definition:</b> gestionnaire.cpp:6</div></div>
+<div class="ttc" id="aclass_gestionnaire_html_a59a3e5b6ff78cc5a48a1e5ce716fe371"><div class="ttname"><a href="class_gestionnaire.html#a59a3e5b6ff78cc5a48a1e5ce716fe371">Gestionnaire::nDelaiAcquisition</a></div><div class="ttdeci">int nDelaiAcquisition</div><div class="ttdef"><b>Definition:</b> gestionnaire.h:19</div></div>
+<div class="ttc" id="aclass_gestionnaire_html_a39a3280ade948b6a1c08d113dcc7f375"><div class="ttname"><a href="class_gestionnaire.html#a39a3280ade948b6a1c08d113dcc7f375">Gestionnaire::~Gestionnaire</a></div><div class="ttdeci">~Gestionnaire()</div><div class="ttdef"><b>Definition:</b> gestionnaire.cpp:25</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

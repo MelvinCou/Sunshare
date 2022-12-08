@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sunshare:  Fichier source de /local/4-Sunshare/realisations/Application Qt - Melvin COURJAUD/TestMoyBdD/include/basededonnees.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Sunshare
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">basededonnees.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="basededonnees_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BASDEDONNEES_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BASDEDONNEES_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QtSql&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_base_de_donnees.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_base_de_donnees.html#a34d7e2d2d43dbc7579e5729145747cca">BaseDeDonnees</a>(QString nIPBdD, <span class="keywordtype">int</span> nPortBdD, QString cNomUtilisateur, QString cMotDePasse, QString cNomDeBdD,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                  QObject *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_base_de_donnees.html#a5dc474cdbe003644fb0ca7b8f2ec6b93">~BaseDeDonnees</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_base_de_donnees.html#ae1cf142b6af39352e75063f8c5063cf7">OuvrirBdD</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_base_de_donnees.html#a2afa60e5268c9b0cea96977f2259721f">FermerBdD</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_base_de_donnees.html#afda95bd027932c6366f960f7ccc339ba">on_Envoyerindicateurs</a>(<span class="keywordtype">int</span> nSoutirage, <span class="keywordtype">int</span> nInjection, QDateTime <a class="code" href="class_base_de_donnees.html#aae289090a8eaeb2cb633f64106b07d0d">oDate</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_base_de_donnees.html#acfd0ee0d07f8d3453d26f656eacc2022">on_CalculerMoyennes</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_base_de_donnees.html#ab2978c769c7ab625f0aabc48a8c33f94">EnvoyerRequete</a>(QByteArray cTable, <span class="keywordtype">int</span> nSoutirage, <span class="keywordtype">int</span> nInjection, <span class="keywordtype">int</span> nProduction, QDateTime <a class="code" href="class_base_de_donnees.html#aae289090a8eaeb2cb633f64106b07d0d">oDate</a>, <span class="keywordtype">bool</span> TableAnnuelle = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_base_de_donnees.html#ae105c9cba398a06bb79a2b70bbfe9091">EnvoyerRequeteMoy</a>(QByteArray cTable, QByteArray cChamp, QDateTime <a class="code" href="class_base_de_donnees.html#aae289090a8eaeb2cb633f64106b07d0d">oDate</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_base_de_donnees.html#a35062387a4d1a097f94ac3df8596983c">   68</a></span>&#160;    QSqlDatabase <a class="code" href="class_base_de_donnees.html#a35062387a4d1a097f94ac3df8596983c">oBdD</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_base_de_donnees.html#aae289090a8eaeb2cb633f64106b07d0d">   73</a></span>&#160;    QDateTime <a class="code" href="class_base_de_donnees.html#aae289090a8eaeb2cb633f64106b07d0d">oDate</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_base_de_donnees.html#a2731edcfafceda56f829eec3bd2b5ea6">   78</a></span>&#160;    QTimer <a class="code" href="class_base_de_donnees.html#a2731edcfafceda56f829eec3bd2b5ea6">oTimer</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_base_de_donnees.html#a3b0fd4707cc271b8a41bd46612de5e78">   82</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_base_de_donnees.html#a3b0fd4707cc271b8a41bd46612de5e78">nSemaine</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_base_de_donnees.html#a686effea06ad2f9c597d06525b2c6aca">   86</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_base_de_donnees.html#a686effea06ad2f9c597d06525b2c6aca">nMois</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_base_de_donnees.html#a0d0c6ffb14949a3f8f537e55423678c7">   90</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_base_de_donnees.html#a0d0c6ffb14949a3f8f537e55423678c7">nAnnee</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif // BASDEDONNEES_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_base_de_donnees_html_a0d0c6ffb14949a3f8f537e55423678c7"><div class="ttname"><a href="class_base_de_donnees.html#a0d0c6ffb14949a3f8f537e55423678c7">BaseDeDonnees::nAnnee</a></div><div class="ttdeci">int nAnnee</div><div class="ttdoc">Nombre de jours avant la moyenne annuelle.</div><div class="ttdef"><b>Definition:</b> basededonnees.h:90</div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_acfd0ee0d07f8d3453d26f656eacc2022"><div class="ttname"><a href="class_base_de_donnees.html#acfd0ee0d07f8d3453d26f656eacc2022">BaseDeDonnees::on_CalculerMoyennes</a></div><div class="ttdeci">void on_CalculerMoyennes()</div><div class="ttdoc">Slot lançant l'acquisition des valeurs moyennes afin de les stocker dans d'autres tables sur le long ...</div><div class="ttdef"><b>Definition:</b> basededonnees.cpp:96</div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_afda95bd027932c6366f960f7ccc339ba"><div class="ttname"><a href="class_base_de_donnees.html#afda95bd027932c6366f960f7ccc339ba">BaseDeDonnees::on_Envoyerindicateurs</a></div><div class="ttdeci">void on_Envoyerindicateurs(int nSoutirage, int nInjection, QDateTime oDate)</div><div class="ttdoc">Envoie la requête avec les indicateurs, déclenché quand le traitement de la TIC est terminé</div><div class="ttdef"><b>Definition:</b> basededonnees.cpp:84</div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_ae105c9cba398a06bb79a2b70bbfe9091"><div class="ttname"><a href="class_base_de_donnees.html#ae105c9cba398a06bb79a2b70bbfe9091">BaseDeDonnees::EnvoyerRequeteMoy</a></div><div class="ttdeci">int EnvoyerRequeteMoy(QByteArray cTable, QByteArray cChamp, QDateTime oDate)</div><div class="ttdoc">Permet de collecter la moyenne d'un champ avec la requête SELECT AVG.</div><div class="ttdef"><b>Definition:</b> basededonnees.cpp:239</div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_ae1cf142b6af39352e75063f8c5063cf7"><div class="ttname"><a href="class_base_de_donnees.html#ae1cf142b6af39352e75063f8c5063cf7">BaseDeDonnees::OuvrirBdD</a></div><div class="ttdeci">void OuvrirBdD()</div><div class="ttdoc">Permet de se connecter à la base de données.</div><div class="ttdef"><b>Definition:</b> basededonnees.cpp:66</div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a5dc474cdbe003644fb0ca7b8f2ec6b93"><div class="ttname"><a href="class_base_de_donnees.html#a5dc474cdbe003644fb0ca7b8f2ec6b93">BaseDeDonnees::~BaseDeDonnees</a></div><div class="ttdeci">~BaseDeDonnees()</div><div class="ttdef"><b>Definition:</b> basededonnees.cpp:61</div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a2731edcfafceda56f829eec3bd2b5ea6"><div class="ttname"><a href="class_base_de_donnees.html#a2731edcfafceda56f829eec3bd2b5ea6">BaseDeDonnees::oTimer</a></div><div class="ttdeci">QTimer oTimer</div><div class="ttdoc">Timer déclenchant le calcul de valeur moyenne quotidienne.</div><div class="ttdef"><b>Definition:</b> basededonnees.h:78</div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_aae289090a8eaeb2cb633f64106b07d0d"><div class="ttname"><a href="class_base_de_donnees.html#aae289090a8eaeb2cb633f64106b07d0d">BaseDeDonnees::oDate</a></div><div class="ttdeci">QDateTime oDate</div><div class="ttdoc">Date actuelle.</div><div class="ttdef"><b>Definition:</b> basededonnees.h:73</div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a686effea06ad2f9c597d06525b2c6aca"><div class="ttname"><a href="class_base_de_donnees.html#a686effea06ad2f9c597d06525b2c6aca">BaseDeDonnees::nMois</a></div><div class="ttdeci">int nMois</div><div class="ttdoc">Nombre de jours avant la moyenne mensuelle.</div><div class="ttdef"><b>Definition:</b> basededonnees.h:86</div></div>
+<div class="ttc" id="aclass_base_de_donnees_html"><div class="ttname"><a href="class_base_de_donnees.html">BaseDeDonnees</a></div><div class="ttdoc">La classe BaseDeDonnees permet d'envoyer des requêtes à la base de données.</div><div class="ttdef"><b>Definition:</b> basededonnees.h:9</div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a35062387a4d1a097f94ac3df8596983c"><div class="ttname"><a href="class_base_de_donnees.html#a35062387a4d1a097f94ac3df8596983c">BaseDeDonnees::oBdD</a></div><div class="ttdeci">QSqlDatabase oBdD</div><div class="ttdoc">Objet Qt permettant de gérer la connexion à une base de données.</div><div class="ttdef"><b>Definition:</b> basededonnees.h:68</div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a3b0fd4707cc271b8a41bd46612de5e78"><div class="ttname"><a href="class_base_de_donnees.html#a3b0fd4707cc271b8a41bd46612de5e78">BaseDeDonnees::nSemaine</a></div><div class="ttdeci">int nSemaine</div><div class="ttdoc">Nombre de jours avant la moyenne hebdomadaire.</div><div class="ttdef"><b>Definition:</b> basededonnees.h:82</div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a34d7e2d2d43dbc7579e5729145747cca"><div class="ttname"><a href="class_base_de_donnees.html#a34d7e2d2d43dbc7579e5729145747cca">BaseDeDonnees::BaseDeDonnees</a></div><div class="ttdeci">BaseDeDonnees(QString nIPBdD, int nPortBdD, QString cNomUtilisateur, QString cMotDePasse, QString cNomDeBdD, QObject *parent=nullptr)</div><div class="ttdoc">Constructeur paramétré de la classe BaseDeDonnees.</div><div class="ttdef"><b>Definition:</b> basededonnees.cpp:29</div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_ab2978c769c7ab625f0aabc48a8c33f94"><div class="ttname"><a href="class_base_de_donnees.html#ab2978c769c7ab625f0aabc48a8c33f94">BaseDeDonnees::EnvoyerRequete</a></div><div class="ttdeci">void EnvoyerRequete(QByteArray cTable, int nSoutirage, int nInjection, int nProduction, QDateTime oDate, bool TableAnnuelle=false)</div><div class="ttdoc">Permet d'envoyer une requête INSERT INTO à la base de données.</div><div class="ttdef"><b>Definition:</b> basededonnees.cpp:213</div></div>
+<div class="ttc" id="aclass_base_de_donnees_html_a2afa60e5268c9b0cea96977f2259721f"><div class="ttname"><a href="class_base_de_donnees.html#a2afa60e5268c9b0cea96977f2259721f">BaseDeDonnees::FermerBdD</a></div><div class="ttdeci">void FermerBdD()</div><div class="ttdoc">Permet de fermer la connexion à la base de données.</div><div class="ttdef"><b>Definition:</b> basededonnees.cpp:77</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

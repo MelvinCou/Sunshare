@@ -1,0 +1,891 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sunshare: Référence de la classe Linky</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Sunshare
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#signals">Signaux</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-slots">Connecteurs privés</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_linky-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Linky</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>La classe <a class="el" href="class_linky.html" title="La classe Linky permet de collecter la TIC et d&#39;en faire le traitement.">Linky</a> permet de collecter la TIC et d'en faire le traitement.  
+ <a href="class_linky.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="linky_8h_source.html">linky.h</a>&gt;</code></p>
+
+<p>Est dérivée de QObject.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signaux</h2></td></tr>
+<tr class="memitem:ad19fb20473e46cec64f95c3540d16dfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#ad19fb20473e46cec64f95c3540d16dfc">TraitementTermine</a> (int <a class="el" href="class_linky.html#a22c648881d96ec3d5b536ce0cba4db69">nSoutirage</a>, int <a class="el" href="class_linky.html#a1554ef192d9b189cea45a73b49f01b6d">nInjection</a>, int nProduction, QDateTime <a class="el" href="class_linky.html#a8e1013505707d11fe1baf763134a7e6c">oDate</a>)</td></tr>
+<tr class="memdesc:ad19fb20473e46cec64f95c3540d16dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal émis à la fin du traitement, il transmet les indicateurs à la classe <a class="el" href="class_base_de_donnees.html" title="La classe BaseDeDonnees permet d&#39;envoyer des requêtes à la base de données.">BaseDeDonnees</a>.  <a href="class_linky.html#ad19fb20473e46cec64f95c3540d16dfc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad19fb20473e46cec64f95c3540d16dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:af45dea695708d8ee66a4313a9a916dbc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#af45dea695708d8ee66a4313a9a916dbc">Linky</a> (QString cNomPort, qint32 nDebit, QSerialPort::DataBits NbreBitsDonnees, QSerialPort::Parity Parite, QSerialPort::StopBits NbreBitsStop, QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:af45dea695708d8ee66a4313a9a916dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur paramétré de la classe <a class="el" href="class_linky.html" title="La classe Linky permet de collecter la TIC et d&#39;en faire le traitement.">Linky</a>.  <a href="class_linky.html#af45dea695708d8ee66a4313a9a916dbc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af45dea695708d8ee66a4313a9a916dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08025659dce9f55b28c9d03a6258034e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#a08025659dce9f55b28c9d03a6258034e">~Linky</a> ()</td></tr>
+<tr class="memdesc:a08025659dce9f55b28c9d03a6258034e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur de la classe <a class="el" href="class_linky.html" title="La classe Linky permet de collecter la TIC et d&#39;en faire le traitement.">Linky</a>. Ferme le port série au cas où il ne l'aurait pas été  <a href="class_linky.html#a08025659dce9f55b28c9d03a6258034e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a08025659dce9f55b28c9d03a6258034e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae00b19d0ccfa532582aab4f97f359099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#ae00b19d0ccfa532582aab4f97f359099">OuvrirPort</a> ()</td></tr>
+<tr class="memdesc:ae00b19d0ccfa532582aab4f97f359099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ouvre le port série en lecture seule.  <a href="class_linky.html#ae00b19d0ccfa532582aab4f97f359099">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae00b19d0ccfa532582aab4f97f359099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d398d6bc31a3a180beba6296df6ee71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#a1d398d6bc31a3a180beba6296df6ee71">FermerPort</a> ()</td></tr>
+<tr class="memdesc:a1d398d6bc31a3a180beba6296df6ee71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ferme le port série.  <a href="class_linky.html#a1d398d6bc31a3a180beba6296df6ee71">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1d398d6bc31a3a180beba6296df6ee71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3092ac61aea3e51d035410ae2612ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#a5e3092ac61aea3e51d035410ae2612ba">LancerAcquisition</a> ()</td></tr>
+<tr class="memdesc:a5e3092ac61aea3e51d035410ae2612ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lance l'Acquisition de la trame, qui sera stockée dans l'attribut oTrame.  <a href="class_linky.html#a5e3092ac61aea3e51d035410ae2612ba">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5e3092ac61aea3e51d035410ae2612ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5befbebb891afcb0d495bce1ef2578c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#a5befbebb891afcb0d495bce1ef2578c5">DecoderTrame</a> ()</td></tr>
+<tr class="memdesc:a5befbebb891afcb0d495bce1ef2578c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lance le décodage de la trame, avec la fonction ExtraireEtiquette.  <a href="class_linky.html#a5befbebb891afcb0d495bce1ef2578c5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5befbebb891afcb0d495bce1ef2578c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Connecteurs privés</h2></td></tr>
+<tr class="memitem:a3d60a09352682604bcffb5a509748abb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#a3d60a09352682604bcffb5a509748abb">on_Lire</a> ()</td></tr>
+<tr class="memdesc:a3d60a09352682604bcffb5a509748abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot déclenché à chaque fois qu'une donnée est lisible sur le port série.  <a href="class_linky.html#a3d60a09352682604bcffb5a509748abb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3d60a09352682604bcffb5a509748abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade6080cf78d460cc4e6071cdc2e0ac90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#ade6080cf78d460cc4e6071cdc2e0ac90">on_TerminerAcquisition</a> ()</td></tr>
+<tr class="memdesc:ade6080cf78d460cc4e6071cdc2e0ac90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot déclenché à la fin de l'acquisition (timeout de pTimerAcquisition)  <a href="class_linky.html#ade6080cf78d460cc4e6071cdc2e0ac90">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ade6080cf78d460cc4e6071cdc2e0ac90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48794273105f8c7f7b1ab63c8c144c61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#a48794273105f8c7f7b1ab63c8c144c61">on_Erreur</a> (QSerialPort::SerialPortError error)</td></tr>
+<tr class="memdesc:a48794273105f8c7f7b1ab63c8c144c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot déclenché en cas d'erreur sur le port (exemple : oubli d'exécution en "sudo")  <a href="class_linky.html#a48794273105f8c7f7b1ab63c8c144c61">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a48794273105f8c7f7b1ab63c8c144c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:ae669c4a0158a7e84d052448de65f413f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#ae669c4a0158a7e84d052448de65f413f">ExtraireEtiquette</a> (QByteArray cEtiquette, int nDonnee, bool bHorodatage=false)</td></tr>
+<tr class="memdesc:ae669c4a0158a7e84d052448de65f413f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'extraire la valeur d'un index à partir de son étiquette correspondante.  <a href="class_linky.html#ae669c4a0158a7e84d052448de65f413f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae669c4a0158a7e84d052448de65f413f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2064c4753b7dd99edd4167a7459349f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#a2064c4753b7dd99edd4167a7459349f4">ExtraireDate</a> ()</td></tr>
+<tr class="memdesc:a2064c4753b7dd99edd4167a7459349f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extrait l'étiquette DATE de la TIC et la stock dans l'attribut cDate.  <a href="class_linky.html#a2064c4753b7dd99edd4167a7459349f4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2064c4753b7dd99edd4167a7459349f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:af7ed6038e69e845ced08dbfb04cda178"><td class="memItemLeft" align="right" valign="top">QSerialPort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#af7ed6038e69e845ced08dbfb04cda178">oPortSerie</a></td></tr>
+<tr class="memdesc:af7ed6038e69e845ced08dbfb04cda178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port série.  <a href="class_linky.html#af7ed6038e69e845ced08dbfb04cda178">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af7ed6038e69e845ced08dbfb04cda178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a107792106f8d302db1c7358f00948e7e"><td class="memItemLeft" align="right" valign="top">QTimer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#a107792106f8d302db1c7358f00948e7e">oTimerAcquisition</a></td></tr>
+<tr class="memdesc:a107792106f8d302db1c7358f00948e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer permettant de limiter la durée d'acquisition.  <a href="class_linky.html#a107792106f8d302db1c7358f00948e7e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a107792106f8d302db1c7358f00948e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e3dac375ae4a09bcff8ff445a7d23d"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#a39e3dac375ae4a09bcff8ff445a7d23d">oTrame</a></td></tr>
+<tr class="memdesc:a39e3dac375ae4a09bcff8ff445a7d23d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attribut dans lequel est stocké la trame complète.  <a href="class_linky.html#a39e3dac375ae4a09bcff8ff445a7d23d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a39e3dac375ae4a09bcff8ff445a7d23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c648881d96ec3d5b536ce0cba4db69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#a22c648881d96ec3d5b536ce0cba4db69">nSoutirage</a></td></tr>
+<tr class="memdesc:a22c648881d96ec3d5b536ce0cba4db69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable dans laquelle est stockée l'instantannée de consommation (Étiquette SINSTS)  <a href="class_linky.html#a22c648881d96ec3d5b536ce0cba4db69">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a22c648881d96ec3d5b536ce0cba4db69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1554ef192d9b189cea45a73b49f01b6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#a1554ef192d9b189cea45a73b49f01b6d">nInjection</a></td></tr>
+<tr class="memdesc:a1554ef192d9b189cea45a73b49f01b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable dans laquelle est stockée l'instantannée d'injection (Étiquette SINSTI)  <a href="class_linky.html#a1554ef192d9b189cea45a73b49f01b6d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1554ef192d9b189cea45a73b49f01b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e1013505707d11fe1baf763134a7e6c"><td class="memItemLeft" align="right" valign="top">QDateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linky.html#a8e1013505707d11fe1baf763134a7e6c">oDate</a></td></tr>
+<tr class="memdesc:a8e1013505707d11fe1baf763134a7e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable dans laquelle est stockée la date (Étiquette DATE) au format : AAAA-MM-JJ HH:MM:SS.  <a href="class_linky.html#a8e1013505707d11fe1baf763134a7e6c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8e1013505707d11fe1baf763134a7e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>La classe <a class="el" href="class_linky.html" title="La classe Linky permet de collecter la TIC et d&#39;en faire le traitement.">Linky</a> permet de collecter la TIC et d'en faire le traitement. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="af45dea695708d8ee66a4313a9a916dbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af45dea695708d8ee66a4313a9a916dbc">&#9670;&nbsp;</a></span>Linky()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Linky::Linky </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>cNomPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint32&#160;</td>
+          <td class="paramname"><em>nDebit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QSerialPort::DataBits&#160;</td>
+          <td class="paramname"><em>NbreBitsDonnees</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QSerialPort::Parity&#160;</td>
+          <td class="paramname"><em>Parite</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QSerialPort::StopBits&#160;</td>
+          <td class="paramname"><em>NbreBitsStop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructeur paramétré de la classe <a class="el" href="class_linky.html" title="La classe Linky permet de collecter la TIC et d&#39;en faire le traitement.">Linky</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InfosPortSerie</td><td>Classe fournissant les informations sur le port série </td></tr>
+    <tr><td class="paramname">nDebit</td><td>Débit en baud du port série (1200, 9600...) </td></tr>
+    <tr><td class="paramname">NbreBitsDonnees</td><td>Nombre de bits de données (7 ou 8) </td></tr>
+    <tr><td class="paramname">Parite</td><td>Périté du port série (paire, impaire) </td></tr>
+    <tr><td class="paramname">NbreBitsStop</td><td>Nombre de bits de stop (1 ou 2) </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Le port série est initialisé ici S'il y a une erreur, celui-ci est inutilisable, c'est pourquoi le programme est quitté si c'est le cas</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                                                          :</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QObject(parent),</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_linky.html#af7ed6038e69e845ced08dbfb04cda178">oPortSerie</a>(cNomPort),</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_linky.html#a22c648881d96ec3d5b536ce0cba4db69">nSoutirage</a>(0),</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_linky.html#a1554ef192d9b189cea45a73b49f01b6d">nInjection</a>(0),</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_linky.html#a8e1013505707d11fe1baf763134a7e6c">oDate</a>()</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// Test si le port est bien branché</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QSerialPortInfo InfoPort(cNomPort);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span>(InfoPort.isNull())</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Dongle USB non branche.\n&quot;</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        exit(-1);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="class_linky.html#af7ed6038e69e845ced08dbfb04cda178">oPortSerie</a>.setBaudRate(nDebit)) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Le debit est incorrect\n&quot;</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        exit(-1);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="class_linky.html#af7ed6038e69e845ced08dbfb04cda178">oPortSerie</a>.setDataBits(NbreBitsDonnees)) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Le nombre de bits de donnee est incorrect\n&quot;</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        exit(-1);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="class_linky.html#af7ed6038e69e845ced08dbfb04cda178">oPortSerie</a>.setParity(Parite)) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;La parite est incorrecte\n&quot;</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        exit(-1);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="class_linky.html#af7ed6038e69e845ced08dbfb04cda178">oPortSerie</a>.setStopBits(NbreBitsStop)) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Nombre de bits de stop incorrect\n&quot;</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        exit(-1);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_linky.html#a107792106f8d302db1c7358f00948e7e">oTimerAcquisition</a>.setInterval(<a class="code" href="linky_8cpp.html#aebbacc7f3f58011e303c29ef6a1a7ff2">nDureeAcquisition</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// signal émis à chaque fois qu&#39;une donnée est lisible : il faut la lire</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    connect(&amp;<a class="code" href="class_linky.html#af7ed6038e69e845ced08dbfb04cda178">oPortSerie</a>,        &amp;QSerialPort::readyRead,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keyword">this</span>,               &amp;<a class="code" href="class_linky.html#a3d60a09352682604bcffb5a509748abb">Linky::on_Lire</a> );</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// signal émis en cas d&#39;erreur sur le port série</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    connect(&amp;<a class="code" href="class_linky.html#af7ed6038e69e845ced08dbfb04cda178">oPortSerie</a>,        &amp;QSerialPort::errorOccurred,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keyword">this</span>,               &amp;<a class="code" href="class_linky.html#a48794273105f8c7f7b1ab63c8c144c61">Linky::on_Erreur</a>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// signal émis lorsque le timer d&#39;acquisition prend fin : l&#39;acquisition est terminée</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    connect(&amp;<a class="code" href="class_linky.html#a107792106f8d302db1c7358f00948e7e">oTimerAcquisition</a>, SIGNAL(timeout() ),</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">this</span>,               SLOT(<a class="code" href="class_linky.html#ade6080cf78d460cc4e6071cdc2e0ac90">on_TerminerAcquisition</a>() ) );</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a08025659dce9f55b28c9d03a6258034e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08025659dce9f55b28c9d03a6258034e">&#9670;&nbsp;</a></span>~Linky()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Linky::~Linky </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructeur de la classe <a class="el" href="class_linky.html" title="La classe Linky permet de collecter la TIC et d&#39;en faire le traitement.">Linky</a>. Ferme le port série au cas où il ne l'aurait pas été </p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;\nAu revoir Linky !\n&quot;</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="class_linky.html#a1d398d6bc31a3a180beba6296df6ee71">FermerPort</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a5befbebb891afcb0d495bce1ef2578c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5befbebb891afcb0d495bce1ef2578c5">&#9670;&nbsp;</a></span>DecoderTrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Linky::DecoderTrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lance le décodage de la trame, avec la fonction ExtraireEtiquette. </p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Traitement de la TIC.\n&quot;</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_linky.html#ae669c4a0158a7e84d052448de65f413f">ExtraireEtiquette</a>(<span class="stringliteral">&quot;VTIC&quot;</span>,2) == 2)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="comment">// extraction des étiquettes pour en extraire les valeurs et les stocker dans l&#39;attribut correspondant</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        this-&gt;<a class="code" href="class_linky.html#a22c648881d96ec3d5b536ce0cba4db69">nSoutirage</a> = <a class="code" href="class_linky.html#ae669c4a0158a7e84d052448de65f413f">ExtraireEtiquette</a>(<span class="stringliteral">&quot;SINSTS&quot;</span>, 5);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        this-&gt;<a class="code" href="class_linky.html#a1554ef192d9b189cea45a73b49f01b6d">nInjection</a> = <a class="code" href="class_linky.html#ae669c4a0158a7e84d052448de65f413f">ExtraireEtiquette</a>(<span class="stringliteral">&quot;SINSTI&quot;</span>, 5);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="class_linky.html#a2064c4753b7dd99edd4167a7459349f4">ExtraireDate</a>();<span class="comment">// stock la date dans l&#39;attribut cDate</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="comment">// traitement fini : on libère l&#39;espace mémoire utilisé par la chaîne de caractères comportant la trame complète</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        this-&gt;<a class="code" href="class_linky.html#a39e3dac375ae4a09bcff8ff445a7d23d">oTrame</a>.clear();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="comment">// le traitement est terminé : un signal est émis à la classe BaseDeDonnees avec les indicateurs</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        emit <a class="code" href="class_linky.html#ad19fb20473e46cec64f95c3540d16dfc">TraitementTermine</a>(this-&gt;<a class="code" href="class_linky.html#a22c648881d96ec3d5b536ce0cba4db69">nSoutirage</a>, this-&gt;<a class="code" href="class_linky.html#a1554ef192d9b189cea45a73b49f01b6d">nInjection</a>, <a class="code" href="class_compteur_s_d_m.html#a4f976f9c2a3ce975110cc05300f26e01">CompteurSDM::Get_nProduction</a>(), this-&gt;<a class="code" href="class_linky.html#a8e1013505707d11fe1baf763134a7e6c">oDate</a>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Traitement impossible\n&quot;</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2064c4753b7dd99edd4167a7459349f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2064c4753b7dd99edd4167a7459349f4">&#9670;&nbsp;</a></span>ExtraireDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Linky::ExtraireDate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Extrait l'étiquette DATE de la TIC et la stock dans l'attribut cDate. </p>
+<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;{</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">int</span> nIndex (0);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    QTime Heure;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    QDate Date;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    nIndex = this-&gt;<a class="code" href="class_linky.html#a39e3dac375ae4a09bcff8ff445a7d23d">oTrame</a>.indexOf(<span class="stringliteral">&quot;DATE&quot;</span>, 0);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    nIndex += 4 + 1 +1; <span class="comment">// on zappe le nom de l&#39;étiquette, caractère &#39;\t&#39; et le caractère de saison</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="comment">// on récupère l&#39;année, le mois et le jour</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    Date.setDate(2000 + this-&gt;<a class="code" href="class_linky.html#a39e3dac375ae4a09bcff8ff445a7d23d">oTrame</a>.mid(nIndex, 2).toInt(),</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                 this-&gt;oTrame.mid(nIndex + 2, 2).toInt(), this-&gt;oTrame.mid(nIndex + 4, 2).toInt());</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="comment">// on récupère l&#39;heure, les minutes et les secondes</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    Heure.setHMS(this-&gt;<a class="code" href="class_linky.html#a39e3dac375ae4a09bcff8ff445a7d23d">oTrame</a>.mid(nIndex + 6, 2).toInt(),</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                 this-&gt;oTrame.mid(nIndex + 8, 2).toInt(), this-&gt;oTrame.mid(nIndex + 10, 2).toInt());</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="comment">// on les applique dans l&#39;attribut</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    this-&gt;<a class="code" href="class_linky.html#a8e1013505707d11fe1baf763134a7e6c">oDate</a>.setDate(Date);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    this-&gt;<a class="code" href="class_linky.html#a8e1013505707d11fe1baf763134a7e6c">oDate</a>.setTime(Heure);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="comment">//cout &lt;&lt; &quot;Date : &quot; &lt;&lt; this-&gt;oDate.toString(FormatDate).toStdString() &lt;&lt; &quot;\n&quot;;</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae669c4a0158a7e84d052448de65f413f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae669c4a0158a7e84d052448de65f413f">&#9670;&nbsp;</a></span>ExtraireEtiquette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Linky::ExtraireEtiquette </td>
+          <td>(</td>
+          <td class="paramtype">QByteArray&#160;</td>
+          <td class="paramname"><em>cEtiquette</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nDonnee</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bHorodatage</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Permet d'extraire la valeur d'un index à partir de son étiquette correspondante. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cEtiquette</td><td>Étiquette en question </td></tr>
+    <tr><td class="paramname">nDonnee</td><td>Nombre de caractères de donnée </td></tr>
+    <tr><td class="paramname">bHorodatage</td><td>Si l'étiquette est horodatée ou non (par défaut à faux) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>L'index correspondant à l'étiquette </dd></dl>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">int</span> nRetour (0);<span class="comment">// variable qui contiendra la valeur de l&#39;étiquette</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">int</span> nIndex (0);<span class="comment">// numéro de case de l&#39;attribut oTrame (chaîne de caractères)</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">// Première étape, se placer au début de l&#39;étiquette qui nous intéresse</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    nIndex = this-&gt;<a class="code" href="class_linky.html#a39e3dac375ae4a09bcff8ff445a7d23d">oTrame</a>.indexOf(cEtiquette, 0);<span class="comment">// 0 correspond au premier caractère</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="comment">// on passe le nom de l&#39;étiquette + caractère &#39;\t&#39;</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    nIndex += cEtiquette.length() + 1;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">// Si l&#39;étiquette est horodatée</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">if</span>(bHorodatage)</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        nIndex += 13; <span class="comment">// Les prochains caractères correspondent à la date, ils ne nous intéressent pas</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="comment">// Extraction de la valeur chiffrée</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    nRetour = this-&gt;<a class="code" href="class_linky.html#a39e3dac375ae4a09bcff8ff445a7d23d">oTrame</a>.mid(nIndex, nDonnee).toInt();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">//cout &lt;&lt; cEtiquette.toStdString() &lt;&lt; &quot; : &quot; &lt;&lt; nRetour &lt;&lt; &quot;\n&quot;;</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">return</span> nRetour;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1d398d6bc31a3a180beba6296df6ee71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d398d6bc31a3a180beba6296df6ee71">&#9670;&nbsp;</a></span>FermerPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Linky::FermerPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ferme le port série. </p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="class_linky.html#af7ed6038e69e845ced08dbfb04cda178">oPortSerie</a>.close();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5e3092ac61aea3e51d035410ae2612ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e3092ac61aea3e51d035410ae2612ba">&#9670;&nbsp;</a></span>LancerAcquisition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Linky::LancerAcquisition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lance l'Acquisition de la trame, qui sera stockée dans l'attribut oTrame. </p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// ouvre le port série pour acquérir les données</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    this-&gt;<a class="code" href="class_linky.html#ae00b19d0ccfa532582aab4f97f359099">OuvrirPort</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Debut de l&#39;acquisition\n&quot;</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// démarre le timer d&#39;acquisition</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="class_linky.html#a107792106f8d302db1c7358f00948e7e">oTimerAcquisition</a>.start();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a48794273105f8c7f7b1ab63c8c144c61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48794273105f8c7f7b1ab63c8c144c61">&#9670;&nbsp;</a></span>on_Erreur</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Linky::on_Erreur </td>
+          <td>(</td>
+          <td class="paramtype">QSerialPort::SerialPortError&#160;</td>
+          <td class="paramname"><em>error</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot déclenché en cas d'erreur sur le port (exemple : oubli d'exécution en "sudo") </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">error</td><td>Erreur </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;{</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="comment">// affiche une erreur s&#39;il y en a eu une</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">if</span> (serialPortError == QSerialPort::ReadError) {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Il y a eu une erreur lors de la tentative de lecture.\n&quot;</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        exit(-1);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3d60a09352682604bcffb5a509748abb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d60a09352682604bcffb5a509748abb">&#9670;&nbsp;</a></span>on_Lire</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Linky::on_Lire </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot déclenché à chaque fois qu'une donnée est lisible sur le port série. </p>
+<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;{</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">// place le dernier bit lu à la fin du tableau</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="code" href="class_linky.html#a39e3dac375ae4a09bcff8ff445a7d23d">oTrame</a>.append(<a class="code" href="class_linky.html#af7ed6038e69e845ced08dbfb04cda178">oPortSerie</a>.readAll());</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="class_linky.html#a107792106f8d302db1c7358f00948e7e">oTimerAcquisition</a>.isActive())</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <a class="code" href="class_linky.html#a107792106f8d302db1c7358f00948e7e">oTimerAcquisition</a>.start();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ade6080cf78d460cc4e6071cdc2e0ac90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade6080cf78d460cc4e6071cdc2e0ac90">&#9670;&nbsp;</a></span>on_TerminerAcquisition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Linky::on_TerminerAcquisition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot déclenché à la fin de l'acquisition (timeout de pTimerAcquisition) </p>
+<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;{</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="comment">// comme l&#39;acquisition est terminée, il faut fermer le port, sinon les ressources de la machine sont utilisées pour rien</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <a class="code" href="class_linky.html#a1d398d6bc31a3a180beba6296df6ee71">FermerPort</a>();</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="comment">// on arrête le timer</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="class_linky.html#a107792106f8d302db1c7358f00948e7e">oTimerAcquisition</a>.stop();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Fin de l&#39;acquisition\n&quot;</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// affiche un message d&#39;erreur si aucune donnée n&#39;a été lue</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_linky.html#a39e3dac375ae4a09bcff8ff445a7d23d">oTrame</a>.isEmpty()) {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Aucune donnee n&#39;est diponible.\n&quot;</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">//        cout &lt;&lt; &quot;Donnees recuperees :\n&quot; &lt;&lt; oTrame.toStdString() &lt;&lt; &quot;\n\n&quot;;</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">// après l&#39;acquisition de la TIC, il faut extraire les données de la TIC et les stocker dans les attributs de la classe</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="class_linky.html#a5befbebb891afcb0d495bce1ef2578c5">DecoderTrame</a>();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae00b19d0ccfa532582aab4f97f359099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae00b19d0ccfa532582aab4f97f359099">&#9670;&nbsp;</a></span>OuvrirPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Linky::OuvrirPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ouvre le port série en lecture seule. </p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// si le port série ne peut pas être ouvert en lecture seule, le programme est quitté</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="class_linky.html#af7ed6038e69e845ced08dbfb04cda178">oPortSerie</a>.open(QIODevice::ReadOnly)) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Erreur lors de l&#39;ouverture du port.\n&quot;</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        exit(-1);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad19fb20473e46cec64f95c3540d16dfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad19fb20473e46cec64f95c3540d16dfc">&#9670;&nbsp;</a></span>TraitementTermine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Linky::TraitementTermine </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nSoutirage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nInjection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nProduction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QDateTime&#160;</td>
+          <td class="paramname"><em>oDate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal émis à la fin du traitement, il transmet les indicateurs à la classe <a class="el" href="class_base_de_donnees.html" title="La classe BaseDeDonnees permet d&#39;envoyer des requêtes à la base de données.">BaseDeDonnees</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nSoutirage</td><td>Index de soutirage </td></tr>
+    <tr><td class="paramname">nInjection</td><td>Index d'injection </td></tr>
+    <tr><td class="paramname">nProduction</td><td>Index de production </td></tr>
+    <tr><td class="paramname">oDate</td><td>Date de collecte des indicateurs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a1554ef192d9b189cea45a73b49f01b6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1554ef192d9b189cea45a73b49f01b6d">&#9670;&nbsp;</a></span>nInjection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Linky::nInjection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Variable dans laquelle est stockée l'instantannée d'injection (Étiquette SINSTI) </p>
+
+</div>
+</div>
+<a id="a22c648881d96ec3d5b536ce0cba4db69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22c648881d96ec3d5b536ce0cba4db69">&#9670;&nbsp;</a></span>nSoutirage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Linky::nSoutirage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Variable dans laquelle est stockée l'instantannée de consommation (Étiquette SINSTS) </p>
+
+</div>
+</div>
+<a id="a8e1013505707d11fe1baf763134a7e6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e1013505707d11fe1baf763134a7e6c">&#9670;&nbsp;</a></span>oDate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDateTime Linky::oDate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Variable dans laquelle est stockée la date (Étiquette DATE) au format : AAAA-MM-JJ HH:MM:SS. </p>
+
+</div>
+</div>
+<a id="af7ed6038e69e845ced08dbfb04cda178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7ed6038e69e845ced08dbfb04cda178">&#9670;&nbsp;</a></span>oPortSerie</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSerialPort Linky::oPortSerie</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Port série. </p>
+
+</div>
+</div>
+<a id="a107792106f8d302db1c7358f00948e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a107792106f8d302db1c7358f00948e7e">&#9670;&nbsp;</a></span>oTimerAcquisition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTimer Linky::oTimerAcquisition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Timer permettant de limiter la durée d'acquisition. </p>
+
+</div>
+</div>
+<a id="a39e3dac375ae4a09bcff8ff445a7d23d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e3dac375ae4a09bcff8ff445a7d23d">&#9670;&nbsp;</a></span>oTrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray Linky::oTrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attribut dans lequel est stocké la trame complète. </p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>/local/4-Sunshare/realisations/Application Qt - Melvin COURJAUD/TestBdD/include/<a class="el" href="linky_8h_source.html">linky.h</a></li>
+<li>/local/4-Sunshare/realisations/Application Qt - Melvin COURJAUD/TestBdD/src/<a class="el" href="linky_8cpp.html">linky.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<div class="ttc" id="aclass_linky_html_a39e3dac375ae4a09bcff8ff445a7d23d"><div class="ttname"><a href="class_linky.html#a39e3dac375ae4a09bcff8ff445a7d23d">Linky::oTrame</a></div><div class="ttdeci">QByteArray oTrame</div><div class="ttdoc">Attribut dans lequel est stocké la trame complète.</div><div class="ttdef"><b>Definition:</b> linky.h:105</div></div>
+<div class="ttc" id="alinky_8cpp_html_aebbacc7f3f58011e303c29ef6a1a7ff2"><div class="ttname"><a href="linky_8cpp.html#aebbacc7f3f58011e303c29ef6a1a7ff2">nDureeAcquisition</a></div><div class="ttdeci">#define nDureeAcquisition</div><div class="ttdef"><b>Definition:</b> linky.cpp:27</div></div>
+<div class="ttc" id="aclass_linky_html_af7ed6038e69e845ced08dbfb04cda178"><div class="ttname"><a href="class_linky.html#af7ed6038e69e845ced08dbfb04cda178">Linky::oPortSerie</a></div><div class="ttdeci">QSerialPort oPortSerie</div><div class="ttdoc">Port série.</div><div class="ttdef"><b>Definition:</b> linky.h:96</div></div>
+<div class="ttc" id="aclass_linky_html_ae669c4a0158a7e84d052448de65f413f"><div class="ttname"><a href="class_linky.html#ae669c4a0158a7e84d052448de65f413f">Linky::ExtraireEtiquette</a></div><div class="ttdeci">int ExtraireEtiquette(QByteArray cEtiquette, int nDonnee, bool bHorodatage=false)</div><div class="ttdoc">Permet d'extraire la valeur d'un index à partir de son étiquette correspondante.</div><div class="ttdef"><b>Definition:</b> linky.cpp:176</div></div>
+<div class="ttc" id="aclass_compteur_s_d_m_html_a4f976f9c2a3ce975110cc05300f26e01"><div class="ttname"><a href="class_compteur_s_d_m.html#a4f976f9c2a3ce975110cc05300f26e01">CompteurSDM::Get_nProduction</a></div><div class="ttdeci">static int Get_nProduction()</div><div class="ttdoc">Accesseur de l'attribut nProduction.</div><div class="ttdef"><b>Definition:</b> compteursdm.cpp:65</div></div>
+<div class="ttc" id="aclass_linky_html_ae00b19d0ccfa532582aab4f97f359099"><div class="ttname"><a href="class_linky.html#ae00b19d0ccfa532582aab4f97f359099">Linky::OuvrirPort</a></div><div class="ttdeci">void OuvrirPort()</div><div class="ttdoc">Ouvre le port série en lecture seule.</div><div class="ttdef"><b>Definition:</b> linky.cpp:87</div></div>
+<div class="ttc" id="aclass_linky_html_a1554ef192d9b189cea45a73b49f01b6d"><div class="ttname"><a href="class_linky.html#a1554ef192d9b189cea45a73b49f01b6d">Linky::nInjection</a></div><div class="ttdeci">int nInjection</div><div class="ttdoc">Variable dans laquelle est stockée l'instantannée d'injection (Étiquette SINSTI)</div><div class="ttdef"><b>Definition:</b> linky.h:115</div></div>
+<div class="ttc" id="aclass_linky_html_a3d60a09352682604bcffb5a509748abb"><div class="ttname"><a href="class_linky.html#a3d60a09352682604bcffb5a509748abb">Linky::on_Lire</a></div><div class="ttdeci">void on_Lire()</div><div class="ttdoc">Slot déclenché à chaque fois qu'une donnée est lisible sur le port série.</div><div class="ttdef"><b>Definition:</b> linky.cpp:135</div></div>
+<div class="ttc" id="aclass_linky_html_a22c648881d96ec3d5b536ce0cba4db69"><div class="ttname"><a href="class_linky.html#a22c648881d96ec3d5b536ce0cba4db69">Linky::nSoutirage</a></div><div class="ttdeci">int nSoutirage</div><div class="ttdoc">Variable dans laquelle est stockée l'instantannée de consommation (Étiquette SINSTS)</div><div class="ttdef"><b>Definition:</b> linky.h:111</div></div>
+<div class="ttc" id="aclass_linky_html_a107792106f8d302db1c7358f00948e7e"><div class="ttname"><a href="class_linky.html#a107792106f8d302db1c7358f00948e7e">Linky::oTimerAcquisition</a></div><div class="ttdeci">QTimer oTimerAcquisition</div><div class="ttdoc">Timer permettant de limiter la durée d'acquisition.</div><div class="ttdef"><b>Definition:</b> linky.h:100</div></div>
+<div class="ttc" id="aclass_linky_html_a5befbebb891afcb0d495bce1ef2578c5"><div class="ttname"><a href="class_linky.html#a5befbebb891afcb0d495bce1ef2578c5">Linky::DecoderTrame</a></div><div class="ttdeci">void DecoderTrame()</div><div class="ttdoc">Lance le décodage de la trame, avec la fonction ExtraireEtiquette.</div><div class="ttdef"><b>Definition:</b> linky.cpp:112</div></div>
+<div class="ttc" id="aclass_linky_html_ade6080cf78d460cc4e6071cdc2e0ac90"><div class="ttname"><a href="class_linky.html#ade6080cf78d460cc4e6071cdc2e0ac90">Linky::on_TerminerAcquisition</a></div><div class="ttdeci">void on_TerminerAcquisition()</div><div class="ttdoc">Slot déclenché à la fin de l'acquisition (timeout de pTimerAcquisition)</div><div class="ttdef"><b>Definition:</b> linky.cpp:146</div></div>
+<div class="ttc" id="aclass_linky_html_a2064c4753b7dd99edd4167a7459349f4"><div class="ttname"><a href="class_linky.html#a2064c4753b7dd99edd4167a7459349f4">Linky::ExtraireDate</a></div><div class="ttdeci">void ExtraireDate()</div><div class="ttdoc">Extrait l'étiquette DATE de la TIC et la stock dans l'attribut cDate.</div><div class="ttdef"><b>Definition:</b> linky.cpp:198</div></div>
+<div class="ttc" id="aclass_linky_html_a1d398d6bc31a3a180beba6296df6ee71"><div class="ttname"><a href="class_linky.html#a1d398d6bc31a3a180beba6296df6ee71">Linky::FermerPort</a></div><div class="ttdeci">void FermerPort()</div><div class="ttdoc">Ferme le port série.</div><div class="ttdef"><b>Definition:</b> linky.cpp:96</div></div>
+<div class="ttc" id="aclass_linky_html_a48794273105f8c7f7b1ab63c8c144c61"><div class="ttname"><a href="class_linky.html#a48794273105f8c7f7b1ab63c8c144c61">Linky::on_Erreur</a></div><div class="ttdeci">void on_Erreur(QSerialPort::SerialPortError error)</div><div class="ttdoc">Slot déclenché en cas d'erreur sur le port (exemple : oubli d'exécution en &quot;sudo&quot;)</div><div class="ttdef"><b>Definition:</b> linky.cpp:167</div></div>
+<div class="ttc" id="aclass_linky_html_ad19fb20473e46cec64f95c3540d16dfc"><div class="ttname"><a href="class_linky.html#ad19fb20473e46cec64f95c3540d16dfc">Linky::TraitementTermine</a></div><div class="ttdeci">void TraitementTermine(int nSoutirage, int nInjection, int nProduction, QDateTime oDate)</div><div class="ttdoc">Signal émis à la fin du traitement, il transmet les indicateurs à la classe BaseDeDonnees.</div></div>
+<div class="ttc" id="aclass_linky_html_a8e1013505707d11fe1baf763134a7e6c"><div class="ttname"><a href="class_linky.html#a8e1013505707d11fe1baf763134a7e6c">Linky::oDate</a></div><div class="ttdeci">QDateTime oDate</div><div class="ttdoc">Variable dans laquelle est stockée la date (Étiquette DATE) au format : AAAA-MM-JJ HH:MM:SS.</div><div class="ttdef"><b>Definition:</b> linky.h:119</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
